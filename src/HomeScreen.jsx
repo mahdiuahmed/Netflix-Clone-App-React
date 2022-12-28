@@ -1,36 +1,22 @@
 import React from 'react'
 import './HomeScreen.css'
 import Nav from './Nav'
+import Banner from './Banner'
+import Row from './Row'
+import requests from './Requests'
 
 function HomeScreen() {
   return (
     <div className='homeScreen'>
-        <Nav /> <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
-    <h1>asd</h1>
+        <Nav />
+
+        <Banner />
+
+        <Row
+        title='NETFLIX ORIGINALS'
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow />
+        <Row title='Documentaries' fetchUrl={requests.fetchDocumentaries}/>
     </div>
     
   )
