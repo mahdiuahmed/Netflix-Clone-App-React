@@ -12,6 +12,7 @@
     width: 150px;
     object-fit: contain;
     padding-left: 20px;
+    margin-top: 20px;
 }
 
 .loginScreen__button {
@@ -37,4 +38,56 @@
         rgba(0, 0, 0, 0) 60%,
         rgba(0, 0, 0, 0.8) 100%
     );
+}
+
+.loginScreen__body {
+    color: aliceblue;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.loginScreen__body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginScreen__body > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__input {
+    margin: 20px;
+}
+
+.loginScreen__input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+
+.loginScreen__getStarted {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: aliceblue;
+    background-color: rgb(192, 12, 12);
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
 }

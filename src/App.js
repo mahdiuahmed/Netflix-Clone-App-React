@@ -1,28 +1,48 @@
-import React from 'react';
-import HomeScreen from './screens/HomeScreen';
-import './App.css';
-import LoginScreen from './screens/LoginScreen';
-import {
-  BrowserRouter as Router, Routes, Route
-} from 'react-router-dom';
-
+import React from "react";
+import { useEffect } from "react";
+import HomeScreen from "./screens/HomeScreen";
+import "./App.css";
+import LoginScreen from "./screens/LoginScreen";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { auth } from "./firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { logout, login, selectUser } from "./features/userSlice";
+import ProfileScreen from "./screens/ProfileScreen";
 
 function App() {
-  const user = null;
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const unsub = auth.onAuthStateChanged((userAuth) => {
+      if (userAuth) {
+        dispatch(
+          login({
+            uid: userAuth.uid,
+            email: userAuth.email,
+          })
+        );
+      } else {
+        dispatch(logout());
+      }
+    });
+
+    return unsub;
+  }, [dispatch]);
+
   return (
     <div className="app">
       <Router>
-      {!user ? (
-        <LoginScreen/>
-      ) : (
-        <Routes>
-            <Route exact path='/' element={<HomeScreen/>}>
-            </Route>
+        {!user ? (
+          <LoginScreen />
+        ) : (
+          <Routes>
+            <Route path="/profile" element={<ProfileScreen />}></Route>
+            <Route exact path="/" element={<HomeScreen />}></Route>
           </Routes>
-      )}
+        )}
       </Router>
     </div>
-          
   );
 }
 
