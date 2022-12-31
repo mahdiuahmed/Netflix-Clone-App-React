@@ -101,7 +101,6 @@ function PlansScreen() {
               onClick={() =>
                 !isCurrentPackage && loadCheckout(productData.prices.priceId)
               }
-              className="plansScreen__subscribe"
             >
               {isCurrentPackage ? "CURRENT PACKAGE" : "SUBSCRIBE"}
             </button>
