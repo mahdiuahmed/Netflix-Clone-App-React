@@ -1,6 +1,11 @@
 # 🎥🍿 Netflix Clone Web Application
 
-A Netflix clone web application built with React.js, Firebase, Redux, and Stripe Checkout. It allows users to [brief description of what the application does].
+A Netflix clone web application built with React.js, Firebase, Redux, and Stripe Checkout. It allows users to prompting users to
+a sign-up screen where data is stored on the Firebase Firestore
+database. Subscription services are available for purchase via
+Stripe Checkout. Landing page of movies gathered from
+[Themoviedb.org](themoviedb.org/?language=en-GB) and presented in a categorised manner to greet
+the user with a variety of free films and shows.
 
 ## 📋 Table of Contents
 
@@ -65,7 +70,7 @@ return (
 export default MovieList;
 ```
 
-### 💻 Technologies Used
+## 💻 Technologies Used
 
 - React.js
 - Firebase
@@ -73,30 +78,30 @@ export default MovieList;
 - Stripe Checkout
 
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 If you'd like to contribute to this project, please [insert contribution guidelines here].
 
-### 📜 License
+## 📜 License
 
 This project is licensed under the [insert license here] license.
 
-### ✍️ Authors
+## ✍️ Authors
 
 [Insert your name and contact information here]
 
-### 🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 [Insert acknowledgments here]
 
-### 📚 Support
+## 📚 Support
 
 If you have any questions or issues with this project, please contact [insert contact information here].
 
-### 📈 Project Status
+## 📈 Project Status
 
 This project is currently [insert status here]. We welcome contributions to help improve it!
 
-### 📝 Additional Notes
+## 📝 Additional Notes
 
 [Insert any additional notes or information here]
