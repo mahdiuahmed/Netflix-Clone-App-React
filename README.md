@@ -10,7 +10,6 @@ the user with a variety of free films and shows.
 ## 📋 Table of Contents
 
 - [🚀 Getting Started](#getting-started)
-- [🎬 Usage](#usage)
 - [💻 Technologies Used](#technologies-used)
 - [🤝 Contributing](#contributing)
 - [📜 License](#license)
@@ -27,55 +26,26 @@ To get started with this project, you will need to have [Node.js](https://nodejs
 
 ### Prerequisites
 
-- Node.js
-- Firebase account and project
-- Stripe account
+- Node.js <img align="left" alt="node" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" />
+
+- Firebase account and project <img align="left" alt="firebase" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+
+- Stripe account <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://www.svgrepo.com/show/354401/stripe.svg"/>
 
 ### Installation
 
-1. Clone the repository to your local machine:
-2. Install the necessary dependencies:
-
-## 🎬 Usage
-
-[Explain how to use the web application]. Here's an example of a component that displays movies:
-
-```jsx
-import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
-
-const MovieList = () => {
-const [movies, setMovies] = useState([]);
-
-useEffect(() => {
- const unsubscribe = db.collection('movies').onSnapshot(snapshot => {
-   setMovies(snapshot.docs.map(doc => ({ id: doc.id, data: doc.data() })));
- });
-
- return unsubscribe;
-}, []);
-
-return (
- <div>
-   {movies.map(movie => (
-     <div key={movie.id}>
-       <h3>{movie.data.title}</h3>
-       <p>{movie.data.description}</p>
-     </div>
-   ))}
- </div>
-);
-};
-
-export default MovieList;
-```
+1. Clone the repository to your local machine: `git clone https://github.com/mahdiuahmed/Netflix-Clone-App-React/`
+2. Install the necessary dependencies: `npm install`
+<br>
 
 ## 💻 Technologies Used
 
-- React.js
-- Firebase
-- Redux
-- Stripe Checkout
+- React.js <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://github.com/devicons/devicon/blob/v2.15.1/icons/react/react-original.svg"/>
+
+- Firebase <img align="left" alt="firebase" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+
+- Redux <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg"/>
+- Stripe Checkout <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://www.svgrepo.com/show/354401/stripe.svg"/>
 
 
 ## 🤝 Contributing
