@@ -18,11 +18,20 @@ the user with a variety of free films and shows.
 
 To get started with this project, you will need to have [Node.js](https://nodejs.org) installed on your machine. Once you have that installed, follow these steps:
 
-1. Clone the repository to your local machine: `git clone https://github.com/mahdiuahmed/Netflix-Clone-App-React/`
-2. Install the necessary dependencies: `npm install`
+1. Clone the repository to your local machine:
+```
+git clone https://github.com/mahdiuahmed/Netflix-Clone-App-React.git
+```
+2. Install the necessary dependencies:
+```
+npm install
+```
 3. Create a Firebase project and configure it to work with this project: [Firebase Console](https://firebase.google.com/?gclid=Cj0KCQiAxbefBhDfARIsAL4XLRprglGBsmdhN0WWbnOEsyLI_QhFRjzWG8eaNpIQdRhtGi3Q0wZG7FMaAvwCEALw_wcB&gclsrc=aw.ds)
 4. Create a Stripe account and configure it to work with this project: [Stripe Developers](https://stripe.com/docs)
-5. Run the project: `npm start`
+5. Run the project:
+```
+npm start
+```
 
 ### Prerequisites
 
@@ -34,8 +43,14 @@ To get started with this project, you will need to have [Node.js](https://nodejs
 
 ### Installation
 
-1. Clone the repository to your local machine: `git clone https://github.com/mahdiuahmed/Netflix-Clone-App-React/`
-2. Install the necessary dependencies: `npm install`
+1. Clone the repository to your local machine:
+```
+git clone https://github.com/mahdiuahmed/Netflix-Clone-App-React.git
+```
+2. Install the necessary dependencies:
+```
+npm install
+```
 
 ## 💻 Technologies Used
 - React.js <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://github.com/devicons/devicon/blob/v2.15.1/icons/react/react-original.svg"/>
