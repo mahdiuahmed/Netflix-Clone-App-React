@@ -1,4 +1,4 @@
-# 🎥🍿 Netflix Clone Web Application
+# 🎥🍿 Netflix Clone Web Application `in progress`
 
 A Netflix clone web application built with React.js, Firebase, Redux, and Stripe Checkout. It allows users to prompting users to
 a sign-up screen where data is stored on the Firebase Firestore
